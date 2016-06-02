@@ -1,10 +1,13 @@
+
+
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 # Elements
 # Header
-	## Header-Hamburger
-	## Header-Logo
+    ## Header-Hamburger
+    ## Header-Logo
+# Hero-image    
 
 
 /*--------------------------------------------------------------
@@ -19,7 +22,19 @@ body {
 li {
 
 }
-
+.main-container{
+    width: 100%;
+    max-width: 1280px;
+}
+.inner-container{
+    width: 83.333333%;
+    float: left;
+    margin:0 auto;
+}
+.flexbox-center{
+    display: flex;
+    align-items: center;
+}
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -132,3 +147,46 @@ nav {
     text-align: center;
     vertical-align: middle;
 }
+/*--------------------------------------------------------------
+# Hero-image
+--------------------------------------------------------------*/
+
+.hero-image h1{
+    font-size: 40px;
+    letter-spacing: 3px;
+    font-family: 'Roboto', sans-serif;
+
+}
+.hero-image p{
+    font-size: 25px;
+}
+
+.hero-image{
+   height: 480px;
+   background-image: url("http://canleyheightsrsl.com.au/wp-content/uploads/2013/12/placeholder.jpg");
+   float: left;
+   background-size: cover;
+ }
+ /*--------------------------------------------------------------
+# Outter-container
+--------------------------------------------------------------*/
+.Outter-container{
+    margin: 0 auto;
+}
+
+/*--------------------------------------------------------------
+# Inner-rectangle
+--------------------------------------------------------------*/
+.Inner-rectangle{
+    width: 40%;
+    background-color: red;
+    margin-top: 40px;
+
+}
+.number{
+    float: left;
+    font-size: 70px;
+    margin-right: 10px;
+    
+}
+
