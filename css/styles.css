@@ -1,5 +1,3 @@
-
-
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -7,7 +5,9 @@
 # Header
     ## Header-Hamburger
     ## Header-Logo
-# Hero-image    
+# Home
+    ## Hero-image
+    ## Programss
 
 
 /*--------------------------------------------------------------
@@ -22,9 +22,14 @@ body {
 li {
 
 }
+
+section {
+    width: 100%;
+}
 .main-container{
     width: 100%;
     max-width: 1280px;
+    display: flex;
 }
 .inner-container{
     width: 83.333333%;
@@ -34,6 +39,7 @@ li {
 .flexbox-center{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 /*--------------------------------------------------------------
 # Header
@@ -147,8 +153,13 @@ nav {
     text-align: center;
     vertical-align: middle;
 }
+
 /*--------------------------------------------------------------
-# Hero-image
+# Home
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+## Hero-image
 --------------------------------------------------------------*/
 
 .hero-image h1{
@@ -162,31 +173,44 @@ nav {
 }
 
 .hero-image{
-   height: 480px;
-   background-image: url("http://canleyheightsrsl.com.au/wp-content/uploads/2013/12/placeholder.jpg");
-   float: left;
-   background-size: cover;
- }
- /*--------------------------------------------------------------
-# Outter-container
---------------------------------------------------------------*/
-.Outter-container{
-    margin: 0 auto;
+    height: 440px;
+    float: left;
+    background-size: cover;
+    background: url("http://canleyheightsrsl.com.au/wp-content/uploads/2013/12/placeholder.jpg") center;
+    display: flex;
 }
 
 /*--------------------------------------------------------------
-# Inner-rectangle
+## Programs
 --------------------------------------------------------------*/
-.Inner-rectangle{
-    width: 40%;
-    background-color: red;
-    margin-top: 40px;
 
+.programs-row {
+    display: flex;
+    flex-direction: row;
 }
-.number{
-    float: left;
-    font-size: 70px;
-    margin-right: 10px;
-    
+.programs-left , .programs-right {
+    width: 50%;
+    margin: 0 20px 0 0;
+    display: flex;
 }
 
+.programs-number {
+    font-size: 120px;
+    margin: 0 20px 0 0;
+}
+
+.program-body {
+}
+
+.programs-title {
+    font-size: 20px;
+    margin: 24px 0;
+}
+
+.programs-text {
+    font-size: 14px;
+    margin: 0;
+}
+
+.programs-readmore {
+}
