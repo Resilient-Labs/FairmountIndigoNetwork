@@ -9,6 +9,8 @@
     ## Hero-image
     ## Programss
 # Blog
+# Page-blog
+# Content
 # Footer    
 
 
@@ -313,6 +315,148 @@ nav {
     font-size: .8em;
     margin-bottom: 50px;
 }
+
+/*--------------------------------------------------------------
+# Page-blog
+--------------------------------------------------------------*/
+.page-blog-title {
+    font-size: 1.8em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.page-blog-img-container {
+    width: 66%;
+    background-color: #ddd;
+}
+
+.page-blog-img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.page-blog-text {
+    width: 66%;
+    margin-bottom: 150px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.page-blog-text p {
+    font-size: 1.1em;
+}
+
+.previous-next-container {
+    width: 66%;
+}
+
+.previous-container {
+    width: 50%;
+    float: left;
+}
+
+.next-container {
+    width: 50%;
+    float: left;
+}
+
+.next-container p {
+    text-align: right;
+}
+
+
+
+@media (min-width: 120px) and (max-width: 640px) {
+    
+    .page-blog-img-container {
+        width: 100%;
+    }
+
+    .page-blog-text {
+        width: 100%;
+    }
+
+    .next-container {
+        width: 100%;
+    }
+
+    .page-blog-P-N {
+        width: 100%;
+        float: left;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .page-blog-previous {
+        width: 100%;
+        float: left;
+        text-align: left;
+        font-size: 1.1em;
+        font-family: 'Roboto Slab', serif;
+    }
+
+    .page-blog-next {
+        width: 100%;
+        float: left;
+        text-align: right;
+        font-size: 1.1em;
+        font-family: 'Roboto Slab', serif; 
+    }
+
+    .previous-next-container {
+        width: 100%;
+    }
+
+    .previous-container {
+        width: 50%;
+    }
+
+    .next-container {
+        width: 50%;
+    }
+
+    .next-container p {
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+.content-container {
+    width: 100%;
+}
+
+.content-info-container {
+    float: left;
+    width: 20%;
+    margin: 2.5%;
+    height: 200px;
+    background-color: #fff;
+}
+
+.content-info-container p {
+    font-size: 1.4em;
+    text-align: center;
+}
+
+@media (min-width: 120px) and (max-width: 480px) {
+    .content-info-container {
+        width: 100%;
+        margin: 0;
+        background-color: transparent;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 980px) {
+
+    .content-info-container {
+        float: left;
+        width: 50%;
+        margin: 0;
+        background-color: transparent;
+    }
+
+}
+
 
 /*--------------------------------------------------------------
 # Footer
