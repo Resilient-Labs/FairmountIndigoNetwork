@@ -43,6 +43,7 @@ button:focus {
     width: 83.333333%;
     float: left;
     margin:0 auto;
+    padding: 20px 0;
 }
 .flexbox-center{
     display: flex;
@@ -192,13 +193,12 @@ nav {
 ## Programs
 --------------------------------------------------------------*/
 
-.programs-row {
+.flex-container {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
 }
-.programs-left , .programs-right {
-    width: 50%;
-    margin: 0 20px 0 0;
+.programs {
+    width: 48%;
     display: flex;
 }
 
@@ -213,11 +213,13 @@ nav {
 .programs-title {
     font-size: 24px;
     margin: 20px 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .programs-text {
     font-size: 14px;
     margin: 0;
+    font-family: 'Roboto Slab', serif;
 }
 
 .programs-readmore {
@@ -230,6 +232,18 @@ nav {
     color: #fff;
     font-size: 1.2em;
     font-family: 'Roboto Slab', serif;
+}
+
+@media (min-width: 120px) and (max-width: 480px) {
+    .programs {
+        width: 100%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 980px) {
+    .programs {
+        width: 100%;
+    }
 }
 
 /*--------------------------------------------------------------
@@ -245,8 +259,8 @@ nav {
 }
 
 .blog-container {
-    padding: 20px;
-    width: 33%;
+    padding: 10px;
+    width: 31%;
 }
 
 .blog-img-container {
@@ -306,7 +320,15 @@ nav {
     background-color: #abc;
 }
 
-#show-more-blog {
+.fin-white {
+    background-color: #fff;
+}
+
+.fin-gray {
+    background-color: #ccc;
+}
+
+#showMore {
     display: block;
     width: 100px;
     height: 40px;
@@ -314,6 +336,25 @@ nav {
     margin: 0 auto;
     font-size: .8em;
     margin-bottom: 50px;
+}
+
+@media (min-width: 120px) and (max-width: 480px) {
+    .blog-container {
+        width: 100%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 980px) {
+    .blog-container {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 981px) {
+    .blog-container {
+        width: 30%;
+    }
 }
 
 /*--------------------------------------------------------------
@@ -421,40 +462,81 @@ nav {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-.content-container {
-    width: 100%;
+.content-title {
+    font-size: 1.8em;
+    font-family: 'Roboto', sans-serif;
 }
 
-.content-info-container {
-    float: left;
-    width: 20%;
-    margin: 2.5%;
+.content-text {
+    width: 66%;
+    font-family: 'Roboto Slab', serif;
+}
+
+.content-container {
+    min-height: 250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content-semi-container {
+    width: 23%;
     height: 200px;
     background-color: #fff;
 }
 
-.content-info-container p {
-    font-size: 1.4em;
-    text-align: center;
+.content-semi-container p {
+    font-size: 1.6em;
+    padding: 15px;
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+    font-weight: lighter;
 }
 
+
+
+
 @media (min-width: 120px) and (max-width: 480px) {
-    .content-info-container {
+    .content-text {
+        width: 88%;
+    }
+
+    .content-semi-container {
+        margin: 20px auto;
         width: 100%;
-        margin: 0;
-        background-color: transparent;
+        height: 200px;
+        background-color: #fff;
+    }
+
+    .content-container {
+        padding: 0 0 30px 0;
+        min-height: 250px;
+        width: 100%;
+        display: block;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
 
 @media (min-width: 481px) and (max-width: 980px) {
-
-    .content-info-container {
-        float: left;
-        width: 50%;
-        margin: 0;
-        background-color: transparent;
+    .content-semi-container {
+        width: 49%;
+        margin: 5px auto;
+        height: 200px;
+        background-color: #fff;
     }
 
+    .content-container {
+        padding: 0 0 30px 0;
+        min-height: 250px;
+        width: 100%;
+        align-items: center;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
 }
 
 
@@ -464,6 +546,6 @@ nav {
 .footer-text{
     padding-top: 10px;
     padding-bottom: 15px;
-    background-color: #CCC;
     text-align: center;
+    font-family: 'Roboto Slab', serif;
 }
