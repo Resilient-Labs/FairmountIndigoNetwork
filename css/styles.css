@@ -462,14 +462,26 @@ nav {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-.content-title {
+.content-top-title {
     font-size: 1.8em;
     font-family: 'Roboto', sans-serif;
 }
 
 .content-text {
+    padding: 0 30px;
     width: 66%;
     font-family: 'Roboto Slab', serif;
+}
+
+.content-top-container {
+    width: 100%;
+    display: flex;
+}
+
+.content-title {
+    margin: auto;
+    font-size: 1.8em;
+    font-family: 'Roboto', sans-serif;
 }
 
 .content-container {
@@ -496,11 +508,30 @@ nav {
 }
 
 
+.content-img {
+    height: 100%;
+    padding: 30px 0;
+    width: 30%;
+    max-width: 30%;
+}
+
+
 
 
 @media (min-width: 120px) and (max-width: 480px) {
+    .content-top-container {
+        width: 100%;
+        display: inline-block;
+    }
+
+    .content-img {
+        width: 100%;
+        max-width: 100%;
+    }
+
     .content-text {
         width: 88%;
+        padding: 0;
     }
 
     .content-semi-container {
@@ -522,6 +553,10 @@ nav {
 }
 
 @media (min-width: 481px) and (max-width: 980px) {
+    .content-img {
+        width: 100%;
+    }
+
     .content-semi-container {
         width: 49%;
         margin: 5px auto;
