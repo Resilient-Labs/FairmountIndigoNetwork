@@ -12,7 +12,15 @@
 # Page-blog
 # Content
 # Footer    
-
+#Colors:
+    Dark Primary Color: #303F9F
+    Primary Color: #3F51B5
+    Light Primary Color: #C5CAE9
+    Text/Icons: #FFFFFF
+    Accent Color: #7C4DFF
+    Primary Text: #212121
+    Secondary Text: #757575
+    Divider Color: #BDBDBD
 
 /*--------------------------------------------------------------
 # Elements
@@ -21,6 +29,10 @@
 body {
     margin: 0;
     padding: 0;
+}
+
+.sticky-wrapper {
+    padding-top: 120px;
 }
 
 li {
@@ -41,6 +53,7 @@ button:focus {
 }
 .inner-container{
     width: 83.333333%;
+    max-width: 1280px;
     float: left;
     margin:0 auto;
     padding: 20px 0;
@@ -55,96 +68,135 @@ button:focus {
 --------------------------------------------------------------*/
 
 header {
+    position: fixed;
     width: 100%;
-    background-color: #CCC;
+    background-color: #3F51B5;
     height: 120px;
     display: flex;
+    justify-content: center;
     align-items: center;
+    box-shadow: 0 0 10px rgba(0,0,0,1);
 }
 
 nav {
-    color: #FFF;
-    width: 83.33333%;
-    max-width: 1280px;
+    display: flex;
+    /*height: auto;*/
     margin: 0 auto;
-    font-family: sans-serif;
-}
-
-/*--------------------------------------------------------------
-## Header-Hamburger
---------------------------------------------------------------*/
-
-#hamburger{
-    width: 48px;
-    position: relative;
-    margin: 0 auto;
-    min-height: 36px;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-    -webkit-transition: .5s ease-in-out;
-    -moz-transition: .5s ease-in-out;
-    -o-transition: .5s ease-in-out;
-    transition: .5s ease-in-out;
-    cursor: pointer;
-    float: right;
-}
-
-#hamburger span{
-    display: block;
+    justify-content: space-between;
+    align-items: center;
     position: absolute;
-    height: 6px;
     width: 100%;
-    background: #FFF;
-    opacity: 1;
+    height: 100%;
+    max-height: 120px;
+    font-size: 16px;
+    font-family: sans-serif;
+    max-width: 1280px;
+}
+
+nav img {
+    height: 100%;
+    max-height: 100px;
+}
+
+/* first stage */
+
+nav > ul {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li {
+    color: #fff;
+    list-style: none;
+    transition: 0.5s;
+}
+
+nav > ul > li > a {
+    padding: 51px 25px;
+    min-width: 130px;
+    text-align: center;
+    font-family: "Franklin Gothic Book", sans-serif;
+}
+
+nav ul > li.submenu > a:after {
+    position: relative;
+    float: right;
+    content: '';
+    margin-left: 10px;
+    margin-top: 8px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+    border-bottom: 5px solid transparent;
+}
+
+nav ul > li.submenu:hover > a:after {
+    margin-top: 2px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid #fff;
+}
+
+nav > ul > li:hover {
+    background: #7C4DFF;
+}
+
+/* second stage (the mega-menu) */
+
+nav ul.megamenu {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    top: -9999px;
     left: 0;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-    -webkit-transition: .25s ease-in-out;
-    -moz-transition: .25s ease-in-out;
-    -o-transition: .25s ease-in-out;
-    transition: .25s ease-in-out;
+    padding: 40px 40px 0 40px;
+    background: #fff;
+    text-align: left;
+    border-top: 5px solid #BDBDBD;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
-#hamburger span:nth-child(1) {
-    top: 0px;
+nav ul li:hover ul.megamenu {
+    top: 100%;
 }
 
-#hamburger span:nth-child(2),#hamburger span:nth-child(3) {
-    top: 12px;
+/* third stage (child-menus in the mega-menu) */
+
+nav ul.megamenu ul {
+    width: 25%;
+    margin-bottom: 40px;
+    color: #000;
+    box-shadow: none;
 }
 
-#hamburger span:nth-child(4) {
-    top: 24px;
+nav ul.megamenu h4 {
+    margin-bottom: 15px;
+    text-transform: uppercase;
 }
 
-#hamburger.open span:nth-child(1) {
-    top: 12px;
-    width: 0%;
-    left: 50%;
+nav ul.megamenu ul li {
+    display: block;
 }
 
-#hamburger.open span:nth-child(2) {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
+nav ul.megamenu ul li a {
+    margin-top: 10px;
+    transition: 0.5s;
+    color: #000;
 }
 
-#hamburger.open span:nth-child(3) {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-}
-
-#hamburger.open span:nth-child(4) {
-    top: 12px;
-    width: 0%;
-    left: 50%;
+nav ul.megamenu ul li a:hover {
+    color: #7C4DFF;
 }
 
 /*--------------------------------------------------------------
