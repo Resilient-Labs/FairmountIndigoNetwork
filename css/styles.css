@@ -74,12 +74,15 @@ a {
 
 p {
     margin: 20px 0;
+    font-size: 16px;
     font-family: 'Libre Franklin', sans-serif;
+    line-height: 1.6;
+    letter-spacing: .5px;
 }
 
 button:focus {
     outline:0;
-    }
+}
 
 .main-container{
     width: 100%;
@@ -326,8 +329,14 @@ nav ul.megamenu ul li a:hover {
 }
 
 .blog-container {
-    padding: 10px;
+    margin: 10px;
     width: 31%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.blog-container:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .blog-img-container {
@@ -348,27 +357,28 @@ nav ul.megamenu ul li a:hover {
     background-color: #fff;
 }
 
-.blog-title {
+.blog-info h3 {
     margin: 0;
     padding: 10px 20px;
-    font-size: 2em;
-    font-family: 'Roboto', sans-serif;
 }
 
-.blog-description {
+.blog-info p {
     padding: 0 20px;
-    font-family: 'Roboto Slab', serif;
 }
 
-.blog-button {
-    width: 100px;
+.blog-info button {
+    margin: 0 20px 20px;
+}
+
+button {
+    width: 140px;
     height: 40px;
     border: none;
     color: #fff;
-    margin: 0 20px;
-    font-size: .8em;
+    background-color: #3F51B5;
+    font-size: 16px;
     margin-bottom: 20px;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'libre franklin', sans-serif;
 }
 
 #first-row {
@@ -383,26 +393,25 @@ nav ul.megamenu ul li a:hover {
 
 }
 
-.fin-color {
-    background-color: #abc;
-}
-
 .fin-white {
     background-color: #fff;
 }
 
 .fin-gray {
-    background-color: #ccc;
+    background-color: #BDBDBD;
 }
 
-#showMore {
+#showMore,#showMore:hover {
+    cursor: pointer;
     display: block;
-    width: 100px;
-    height: 40px;
+    width: 160px;
+    height: 50px;
     border: none;
-    margin: 0 auto;
-    font-size: .8em;
-    margin-bottom: 50px;
+    border-radius: 25px;
+    font-size: 16px;
+    margin: 30px auto;
+    background: #3F51B5;
+    color: #fff;
 }
 
 @media (min-width: 120px) and (max-width: 480px) {
@@ -474,7 +483,7 @@ nav ul.megamenu ul li a:hover {
 
 
 @media (min-width: 120px) and (max-width: 640px) {
-    
+
     .page-blog-img-container {
         width: 100%;
     }
@@ -506,7 +515,7 @@ nav ul.megamenu ul li a:hover {
         float: left;
         text-align: right;
         font-size: 1.1em;
-        font-family: 'Roboto Slab', serif; 
+        font-family: 'Roboto Slab', serif;
     }
 
     .previous-next-container {
@@ -645,9 +654,14 @@ nav ul.megamenu ul li a:hover {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-.footer-text{
-    padding-top: 10px;
-    padding-bottom: 15px;
+footer  {
+    border-top: 1px solid #BDBDBD;
+    padding: 15px 0;
     text-align: center;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'libre baskerville', serif;
+}
+
+footer small a {
+    text-transform: none;
+    font-weight: bold;
 }
