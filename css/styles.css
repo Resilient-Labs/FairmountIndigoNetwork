@@ -607,18 +607,43 @@ footer small a {
     font-weight: bold;
 }
 
-@media only screen and (min-width: 120px) and (max-width: 640px) or (min-device-width: 120px) and (max-device-width: 640px) {
-    /*--------------------------------------------------------------
-    ## Header-Hamburger
-    --------------------------------------------------------------*/
+@media (min-width: 120px) and (max-width: 746px), (min-device-width: 120px) and (max-device-width: 746px) {
+    
     .links {
         display: none;
     }
 
+    nav ul li {
+        width: 100%;
+    }
+    
+    nav ul li a {
+        padding: 10px 0;
+        font-size: 18px!important;
+        color: #fff!important;
+    }
+
+    .mobile-menu {
+        margin-top: 100px;
+        position: absolute;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+        width: 100%;
+        background-color: grey;
+    }
+    
+    .mobile-menu.open {
+        display: flex;
+    }
+
+    .page-blog-img-container, .page-blog-text {width: 100%;}
+
     #hamburger{
         width: 48px;
         position: relative;
-        margin: 0 auto;
+        margin: 0 20px;
         min-height: 36px;
         -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
@@ -796,7 +821,20 @@ footer small a {
     }
 }
 
-@media (min-width: 641px) and (max-width: 1080px) {
+@media (min-width: 747px) and (max-width: 1080px) {
+    .page-blog-img-container, .page-blog-text {width: 100%;}
+
+    nav ul.megamenu {
+        max-width: 640px;
+    }
+    nav ul.megamenu ul {
+        width: 75%;
+    }
+
+    nav > ul > li > a {
+        padding: 36px 10px;
+        min-width: 80px;
+    }
 
     .hero-copy {
         padding: 0 20px;
