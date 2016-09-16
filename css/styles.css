@@ -821,7 +821,7 @@ footer small a {
     }
 }
 
-@media (min-width: 747px) and (max-width: 1080px) {
+@media (min-width: 747px) and (max-width: 1080px), (min-device-width: 747px) and (max-device-width: 1080px) {
     .page-blog-img-container, .page-blog-text {width: 100%;}
 
     nav ul.megamenu {
