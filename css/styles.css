@@ -32,7 +32,7 @@ body {
 }
 
 .sticky-wrapper {
-    padding-top: 120px;
+    padding-top: 90px;
 }
 
 li {
@@ -41,6 +41,40 @@ li {
 
 section {
     width: 100%;
+}
+
+h1 {
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 40px;
+    letter-spacing: 3px;
+    color: #212121;
+}
+
+h2 {
+    font-family: 'Libre Franklin', serif;
+    font-size: 28px;
+    font-weight: normal;
+    color: #212121;
+}
+
+h3 {
+    color: #212121;
+    font-size: 22px;
+    margin: 20px 0;
+    font-family: 'Libre Baskerville', serif;
+}
+
+a {
+    color: #7C4DFF;
+    font-family: 'libre franklin', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+p {
+    margin: 20px 0;
+    font-family: 'Libre Franklin', sans-serif;
 }
 
 button:focus {
@@ -71,7 +105,7 @@ header {
     position: fixed;
     width: 100%;
     background-color: #3F51B5;
-    height: 120px;
+    height: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,7 +121,7 @@ nav {
     position: absolute;
     width: 100%;
     height: 100%;
-    max-height: 120px;
+    max-height: 90px;
     font-size: 16px;
     font-family: sans-serif;
     max-width: 1280px;
@@ -95,7 +129,7 @@ nav {
 
 nav img {
     height: 100%;
-    max-height: 100px;
+    max-height: 80px;
 }
 
 /* first stage */
@@ -122,7 +156,7 @@ nav ul li {
 }
 
 nav > ul > li > a {
-    padding: 51px 25px;
+    padding: 36px 25px;
     min-width: 130px;
     text-align: center;
     font-family: "Franklin Gothic Book", sans-serif;
@@ -223,16 +257,6 @@ nav ul.megamenu ul li a:hover {
 ## Hero-image
 --------------------------------------------------------------*/
 
-.hero-image h1{
-    font-size: 40px;
-    letter-spacing: 3px;
-    font-family: 'Roboto', sans-serif;
-
-}
-.hero-image p{
-    font-size: 25px;
-}
-
 .hero-image{
     height: 440px;
     float: left;
@@ -252,26 +276,17 @@ nav ul.megamenu ul li a:hover {
 .programs {
     width: 48%;
     display: flex;
+    margin: 10px 0;
 }
 
 .programs-number {
     font-size: 120px;
-    margin: 0 20px 0 0;
+    min-width: 100px;
+    font-family: 'libre franklin', sans-serif;
+    color: #3F51B5;
 }
 
 .program-body {
-}
-
-.programs-title {
-    font-size: 24px;
-    margin: 20px 0;
-    font-family: 'Roboto', sans-serif;
-}
-
-.programs-text {
-    font-size: 14px;
-    margin: 0;
-    font-family: 'Roboto Slab', serif;
 }
 
 .programs-readmore {
