@@ -78,6 +78,19 @@ a:hover, button {
     cursor: pointer
 }
 
+
+
+button {
+    width: 140px;
+    height: 40px;
+    border: none;
+    color: #fff;
+    background-color: #3F51B5;
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-family: 'libre franklin', sans-serif;
+}
+
 p {
     margin: 20px 0;
     font-size: 16px;
@@ -108,7 +121,9 @@ button:focus {
     display: -webkit-flex;
     display: -ms-flexbox;
     align-items: center;
+    -webkit-align-items: center;
     justify-content: center;
+    -webkit-justify-content: center;
 }
 /*--------------------------------------------------------------
 # Header
@@ -123,7 +138,9 @@ header {
     display: -webkit-flex;
     display: -ms-flexbox;
     justify-content: center;
+    -webkit-justify-content: center;
     align-items: center;
+    -webkit-align-items: center;
     box-shadow: 0 0 10px rgba(0,0,0,1);
     z-index: 10000;
 }
@@ -132,10 +149,11 @@ nav {
     display: flex;
     display: -webkit-flex;
     display: -ms-flexbox;
-    /*height: auto;*/
     margin: 0 auto;
     justify-content: space-between;
+    -webkit-justify-content: space-between;
     align-items: center;
+    -webkit-align-items: center;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -158,6 +176,7 @@ nav > ul {
     display: -webkit-flex;
     display: -ms-flexbox;
     justify-content: flex-end;
+    -webkit-justify-content: flex-end;
     width: 1200px;
     margin: 0 auto;
     padding: 0;
@@ -212,6 +231,7 @@ nav ul.megamenu {
     display: -webkit-flex;
     display: -ms-flexbox;
     flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
     width: 1200px;
     top: -9999px;
     left: 0;
@@ -291,9 +311,11 @@ nav ul.megamenu ul li a:hover {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    -webkit-justify-content: center;
     max-height: 440px;
 }
 
@@ -341,6 +363,7 @@ nav ul.megamenu ul li a:hover {
     display: -webkit-flex;
     display: -ms-flexbox;
     flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
 }
 .programs {
     width: 48%;
@@ -355,12 +378,6 @@ nav ul.megamenu ul li a:hover {
     min-width: 100px;
     font-family: 'libre franklin', sans-serif;
     color: #3F51B5;
-}
-
-.program-body {
-}
-
-.programs-readmore {
 }
 
 .fin-button {
@@ -383,7 +400,9 @@ nav ul.megamenu ul li a:hover {
     display: -webkit-flex;
     display: -ms-flexbox;
     flex-direction: row;
+    -webkit-flex-direction: row;
     justify-content: space-between;
+    -webkit-justify-content: space-between;
 }
 
 .blog-container {
@@ -404,7 +423,9 @@ nav ul.megamenu ul li a:hover {
     display: -webkit-flex;
     display: -ms-flexbox;
     justify-content: flex-start;
+    -webkit-justify-content: flex-start;
     align-items: flex-start;
+    -webkit-align-items: flex-start;
     overflow: hidden;
 }
 
@@ -428,29 +449,6 @@ nav ul.megamenu ul li a:hover {
 
 .blog-info button {
     margin: 0 20px 20px;
-}
-
-button {
-    width: 140px;
-    height: 40px;
-    border: none;
-    color: #fff;
-    background-color: #3F51B5;
-    font-size: 16px;
-    margin-bottom: 20px;
-    font-family: 'libre franklin', sans-serif;
-}
-
-#first-row {
-
-}
-
-#second-row {
-
-}
-
-#third-row {
-
 }
 
 .fin-white {
@@ -555,8 +553,11 @@ button {
     display: -webkit-flex;
     display: -ms-flexbox;
     align-items: center;
+    -webkit-align-items: center;
     flex-direction: row;
+    -webkit-flex-direction: row;
     justify-content: space-between;
+    -webkit-justify-content: space-between;
 }
 
 .content-semi-container {
@@ -567,7 +568,9 @@ button {
     display: -webkit-flex;
     display: -ms-flexbox;
     justify-content: center;
+    -webkit-justify-content: center;
     align-items: center;
+    -webkit-align-items: center;
     text-align: center;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
@@ -693,8 +696,11 @@ footer small a {
         display: -webkit-flex;
         display: -ms-flexbox;
         align-items: center;
+        -webkit-align-items: center;
         flex-flow: column wrap;
+        -webkit-flex-flow: column wrap;
         justify-content: space-between;
+        -webkit-justify-content: space-between;
     }
 }
 
@@ -721,8 +727,11 @@ footer small a {
         min-height: 250px;
         width: 100%;
         align-items: center;
+        -webkit-align-items: center;
         flex-flow: row wrap;
+        -webkit-flex-flow: row wrap;
         justify-content: space-between;
+        -webkit-justify-content: space-between;
     }
 
     .content-top-container {
