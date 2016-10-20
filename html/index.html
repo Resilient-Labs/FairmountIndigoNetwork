@@ -6,12 +6,20 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
 
 <header>
     <nav>
         <a href="index.html"><img src="../img/logo.jpg" /></a>
+        <!-- #hamburger starts -->
+        <div id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div> <!-- #hamburger ends -->
         <ul class="links mobile-menu">
             <li><a href="#">Home</a></li>
             <li><a href="page.html">About Us</a></li>
@@ -27,16 +35,9 @@
                 </ul>
             </li>
             <li><a href="page-blog.html">Updates</a></li>
-            <li><a href="blog.html">Events</a></li>
+            <li><a href="blog.html">Blog</a></li>
             <li><a href="blog.html">Links</a></li>
         </ul>
-        <!-- #hamburger starts -->
-        <div id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div> <!-- #hamburger ends -->
     </nav>
 </header>
 <div class="sticky-wrapper">
@@ -55,20 +56,66 @@
           </div>
 
       </section>-->
+    <!--    <div id="sliderFrame">
+            <div id="slider">
+                <img src="../img/fin2.jpg" />
+                <img src="../img/fin.jpg" alt="" />
+                <img src="../img/heroimg1.png" alt="#htmlcaption" />
+            </div>
+            <div id="htmlcaption" style="display: none;">
+                <em>HTML</em> caption. Link to <a href="http://www.google.com/">Google</a>.
+            </div>
+        </div>-->
 
-        <div class="hero inner-containe">
-            <div class="hero-overlay">
+
+    <!--        <div class="hero inner-container">
+                <div class="hero-overlay">
+                    <img src="../img/fin2.jpg" />
+                </div>
+                &lt;!&ndash;<div class="hero-img" style='background: url("../img/fin2.jpg") center center / cover no-repeat;'></div>&ndash;&gt;
+                <div class="hero-copy">
+                    <h1>Fairmount Indigo Network</h1>
+                    <h2>The Fairmount / Indigo Network is a collective of over 30 organizations, and growing,
+                        that are working collaboratively to increase the quality of life for residents
+                        of the Fairmount Line corridor neighborhoods.
+                    </h2>
+                </div>
+            </div>-->
+    <section class="hero-container">
+        <div class="slider overlay">
+            <div class="slide">
+                <div class="hero-copy">
+                    <h1>Fairmount Indigo Network</h1>
+                    <h2>The Fairmount / Indigo Network is a collective of over 30 organizations, and growing,
+                        that are working collaboratively to increase the quality of life for residents
+                        of the Fairmount Line corridor neighborhoods.
+                    </h2>
+                </div>
+                <img src="../img/fin2.jpg" />
             </div>
-            <div class="hero-img" style='background: url("../img/fin2.jpg") center center / cover no-repeat;'>
+            <div class="slide">
+                <div class="hero-copy">
+                    <h1>Slide 2 Text</h1>
+                    <h2>The Fairmount / Indigo Network is a collective of over 30 organizations, and growing,
+                        that are working collaboratively to increase the quality of life for residents
+                        of the Fairmount Line corridor neighborhoods.
+                    </h2>
+                </div>
+                <img src="../img/food.jpg" />
             </div>
-            <div class="hero-copy">
-                <h1>Fairmount Indigo Network</h1>
-                <h2>The Fairmount / Indigo Network is a collective of over 30 organizations, and growing,
-                    that are working collaboratively to increase the quality of life for residents
-                    of the Fairmount Line corridor neighborhoods.
-                </h2>
+            <div class="slide">
+                <div class="hero-copy">
+                    <h1>Slide 3 Text</h1>
+                    <h2>The Fairmount / Indigo Network is a collective of over 30 organizations, and growing,
+                        that are working collaboratively to increase the quality of life for residents
+                        of the Fairmount Line corridor neighborhoods.
+                    </h2>
+                </div>
+                <img src="../img/heroimg2.JPG" />
             </div>
+
         </div>
+    </section>
     <!-- End of first section-->
     <!-- Start of second section-->
     <section id="programs">
@@ -130,6 +177,11 @@
 </div>
 
 <!--End of second section-->
+
+<!-- BANNER -->
+<section class="banner">
+    <a href="blog.html"><h3>Check Out Our Blog</h3></a>
+</section>
 
 <!--Footer-->
 <footer>
