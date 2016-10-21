@@ -1034,3 +1034,5 @@ footer small a {
         margin: 0;
     }
 }
+
+.megamenu ul li a {color: #000!important;}
