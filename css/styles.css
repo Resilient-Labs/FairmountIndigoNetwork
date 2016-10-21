@@ -70,7 +70,7 @@ a {
     font-family: 'libre franklin', sans-serif;
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
     cursor: pointer;
 }
 
@@ -446,7 +446,7 @@ nav ul.megamenu ul li a:hover {
 }
 
 .fin-gray {
-    background-color: #BDBDBD;
+    background-color: #eee;
 }
 
 #showMore,#showMore:hover {
@@ -897,7 +897,8 @@ footer small a {
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: .5
+    transition-duration: 600ms;
+    transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
 .fade {
@@ -905,25 +906,24 @@ footer small a {
     transition: display 1s ease-in-out;
     -moz-transition: display 1s ease-in-out;
     -webkit-transition: display 1s ease-in-out;
-    /*opacity: 1;*/
-    /*transition: opacity .25s ease-in-out;
-    -moz-transition: opacity .25s ease-in-out;
-    -webkit-transition: opacity .25s ease-in-out;*/
-    /*transition: visibility 0s, opacity 0.5s linear;
-    -webkit-transition: visibility 0s, opacity 0.5s linear;
-    -moz-transition: visibility 0s, opacity 0.5s linear;*/
 }
 
 .banner {
-    min-height: 100px;
-    background-color: #303F9F;
+    min-height: 80px;
+    background-color: #7C4DFF;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-flow: column wrap;
 }
 
 .banner a {
-    padding: 40px 10px;
+    padding: 10px 10px;
+}
+
+.banner button {
+    background-color: #fff;
+    color: #303F9F;
 }
 
 .banner h3 {
@@ -947,4 +947,36 @@ footer small a {
 
 .hide {
     display: none;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.w3-animate-fading{
+    -webkit-animation:fading 4s infinite;
+    animation:fading 4s infinite;
+    z-index: -1;
+}
+@-webkit-keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+
+.dots {
+    height: 30px;
+    background-color: #3F51B5;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.dots div, .dots div::selection {
+    margin: 5px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 50%;
+    color: transparent;
+}
+
+.dots div.empty {
+    background-color: transparent;
 }
