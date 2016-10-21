@@ -811,7 +811,7 @@ footer small a {
     }
     
     .links {
-        display: none;
+        /*display: none;*/
     }
 
     nav > ul > li {
@@ -828,7 +828,7 @@ footer small a {
         align-self: flex-start;
         margin-top: 90px;
         position: absolute;
-        display: none;
+        /*display: none;*/
         justify-content: center;
         -webkit-justify-content: center;
         align-items: center;
