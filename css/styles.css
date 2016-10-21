@@ -1006,4 +1006,8 @@ footer small a {
         align-self: center;
         text-align: center;
     }
+
+    nav > ul {
+        margin: 0;
+    }
 }
