@@ -778,6 +778,12 @@ footer small a {
         width: auto;
     }*/
 
+    nav img {
+        height: auto;
+        max-height: 80px;
+        max-width: 80px;
+    }
+
     .overlay:before {
         max-height: 300px;
     }
