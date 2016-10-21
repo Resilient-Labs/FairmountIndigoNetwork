@@ -610,8 +610,12 @@ footer small a {
     height: 480px;
     overflow: hidden;
     display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     align-items: center;
+    -webkit-align-items: center;
     justify-content: center;
+    -webkit-justify-content: center;
 }
 
 .slider img {
@@ -621,8 +625,12 @@ footer small a {
 .slide {
     width: 100%;
     display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     justify-content: center;
+    -webkit-justify-content: center;
     align-items: center;
+    -webkit-align-items: center;
     transition-duration: 600ms;
     transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
@@ -638,9 +646,13 @@ footer small a {
     min-height: 80px;
     background-color: #7C4DFF;
     display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     justify-content: center;
+    -webkit-align-items: center;
     align-items: center;
     flex-flow: column wrap;
+    -webkit-flex-flow: column wrap;
 }
 
 .banner a {
@@ -681,8 +693,12 @@ footer small a {
     height: 30px;
     background-color: #3F51B5;
     display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     justify-content:center;
+    -webkit-justify-content: center;
     align-items: center;
+    -webkit-align-items: center;
 }
 
 .dots div, .dots div::selection {
@@ -755,6 +771,7 @@ footer small a {
 
     .content-top-container {
         flex-flow: column wrap;
+        -webkit-flex-flow: column wrap;
     }
 
     .programs {
@@ -777,10 +794,6 @@ footer small a {
         height: 100%;
         width: auto;
     }*/
-
-    nav {
-        max-width: 100%;
-    }
 
     nav img {
         height: auto;
@@ -817,14 +830,20 @@ footer small a {
         position: absolute;
         display: none;
         justify-content: center;
+        -webkit-justify-content: center;
         align-items: center;
+        -webkit-align-items: center;
         flex-flow: row wrap;
+        -webkit-flex-flow: row wrap;
         width: 100%;
         background-color: #3F51B5;
     }
     
     .mobile-menu.open {
         display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+
     }
 
     .page-blog-img-container, .page-blog-text {width: 100%;}
