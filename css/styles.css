@@ -772,11 +772,11 @@ footer small a {
     .slider {
         height: 300px;
     }
-    
-    .slider img {
+
+/*    .slider img {
         height: 100%;
         width: auto;
-    }
+    }*/
 
     .overlay:before {
         max-height: 300px;
