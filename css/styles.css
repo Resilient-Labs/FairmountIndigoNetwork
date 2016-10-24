@@ -814,8 +814,17 @@ footer small a {
         max-width: 480px;
     }
 
-    .links, .desktop-menu {
+    .desktop-menu {
         display: none;
+    }
+
+    .links {
+      height: 0;
+    }
+
+    .links.open {
+      height: 100%;
+      max-height: 240px;
     }
 
     nav > ul > li {
