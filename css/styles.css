@@ -44,7 +44,7 @@ section {
 }
 
 h1 {
-    font-family: 'Libre Baskerville', sans-serif;
+    font-family: 'Montserrat', 'Libre Baskerville', sans-serif;
     font-size: 40px;
     letter-spacing: 3px;
     color: #212121;
@@ -67,7 +67,7 @@ h3 {
 
 a {
     color: #7C4DFF;
-    font-family: 'libre franklin', sans-serif;
+    font-family: 'Montserrat', 'libre franklin', sans-serif;
     text-transform: uppercase;
     text-decoration: none;
     font-size: 16px;
@@ -151,7 +151,7 @@ nav {
     height: 100%;
     max-height: 90px;
     font-size: 16px;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     max-width: 1280px;
     z-index: 999999999;
 }
@@ -191,7 +191,7 @@ nav > ul > li > a {
     padding: 36px 25px;
     min-width: 130px;
     text-align: center;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Montserrat', 'Libre Baskerville', serif;
 }
 
 nav ul > li.submenu > a:after {
@@ -820,8 +820,18 @@ footer small a {
 
     .links.open {
       min-height: 120px;
-      height: 150%;
-      max-height: 480px;
+      height: 125%;
+      max-height: 180px;
+    }
+
+    nav ul.megamenu { padding: 0; -webkit-padding-start: 0; }
+
+    nav ul.megamenu ul {
+      width: 40%;
+    }
+
+    .slider img {
+      width: 133%;
     }
 
     nav > ul > li {
@@ -830,7 +840,7 @@ footer small a {
 
     nav ul li a {
         padding: 10px 0;
-        font-size: 14px;
+        font-size: 18px;
         color: #fff!important;
     }
 
