@@ -819,6 +819,7 @@ footer small a {
     }
 
     .links.open {
+      min-height: 120px;
       height: 150%;
       max-height: 480px;
     }
