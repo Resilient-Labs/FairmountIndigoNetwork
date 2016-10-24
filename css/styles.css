@@ -833,6 +833,8 @@ footer small a {
     .slider img {
       width: auto;
       height: 100%;
+      max-height: 300px;
+          position: static;
     }
 
     nav > ul > li {
