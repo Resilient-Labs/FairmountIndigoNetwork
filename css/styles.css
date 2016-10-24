@@ -853,6 +853,7 @@ footer small a {
         display: flex;
         display: -webkit-flex;
         display: -ms-flexbox;
+        left: 0;
 
     }
 
