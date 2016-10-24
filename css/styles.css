@@ -841,7 +841,7 @@ footer small a {
     .mobile-menu {
         align-self: flex-start;
         margin-top: 90px;
-        position: absolute;
+        position: fixed;
         display: none;
         justify-content: center;
         -webkit-justify-content: center;
