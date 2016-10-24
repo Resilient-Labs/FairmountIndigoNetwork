@@ -716,11 +716,6 @@ footer small a {
     background-color: transparent;
 }
 
-.mobile-menu {
-  display: none;
-}
-
-
 @media (min-width: 1081px) {
     .blog-container {
         width: 30%;
