@@ -11,7 +11,7 @@
 # Blog
 # Page-blog
 # Content
-# Footer    
+# Footer
 #Colors:
     Dark Primary Color: #303F9F
     Primary Color: #3F51B5
@@ -715,6 +715,10 @@ footer small a {
     background-color: transparent;
 }
 
+.mobile-menu {
+  display: none;
+}
+
 
 @media (min-width: 1081px) {
     .blog-container {
@@ -809,15 +813,15 @@ footer small a {
         margin: 15px 10px;
         max-width: 480px;
     }
-    
-    .links {
+
+    .links, .desktop-menu {
         display: none;
     }
 
     nav > ul > li {
         width: 50%;
     }
-    
+
     nav ul li a {
         padding: 10px 0;
         font-size: 14px;
@@ -838,7 +842,7 @@ footer small a {
         width: 100%;
         background-color: #3F51B5;
     }
-    
+
     .mobile-menu.open {
         display: flex;
         display: -webkit-flex;
